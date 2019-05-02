@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		A46B41AE227A79F000558AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41AD227A79F000558AAF /* AppDelegate.swift */; };
-		A46B41B0227A79F000558AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41AF227A79F000558AAF /* ViewController.swift */; };
+		A46B41B0227A79F000558AAF /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41AF227A79F000558AAF /* GameController.swift */; };
 		A46B41B3227A79F000558AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46B41B1227A79F000558AAF /* Main.storyboard */; };
 		A46B41B5227A79F200558AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46B41B4227A79F200558AAF /* Assets.xcassets */; };
 		A46B41B8227A79F200558AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46B41B6227A79F200558AAF /* LaunchScreen.storyboard */; };
+		A46B41C0227A7B5700558AAF /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41BF227A7B5700558AAF /* CardCell.swift */; };
+		A46B41C2227A7B6D00558AAF /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41C1227A7B6D00558AAF /* MemoryGame.swift */; };
+		A46B41C4227A7B8300558AAF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41C3227A7B8300558AAF /* Card.swift */; };
+		A46B41C6227A88A500558AAF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41C5227A88A500558AAF /* APIClient.swift */; };
+		A46B41C8227A88F200558AAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B41C7227A88F200558AAF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A46B41AA227A79F000558AAF /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46B41AD227A79F000558AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A46B41AF227A79F000558AAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A46B41AF227A79F000558AAF /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		A46B41B2227A79F000558AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A46B41B4227A79F200558AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46B41B7227A79F200558AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A46B41B9227A79F200558AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46B41BF227A7B5700558AAF /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		A46B41C1227A7B6D00558AAF /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		A46B41C3227A7B8300558AAF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A46B41C5227A88A500558AAF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A46B41C7227A88F200558AAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				A46B41AD227A79F000558AAF /* AppDelegate.swift */,
-				A46B41AF227A79F000558AAF /* ViewController.swift */,
+				A46B41AF227A79F000558AAF /* GameController.swift */,
+				A46B41BF227A7B5700558AAF /* CardCell.swift */,
+				A46B41C1227A7B6D00558AAF /* MemoryGame.swift */,
+				A46B41C3227A7B8300558AAF /* Card.swift */,
 				A46B41B1227A79F000558AAF /* Main.storyboard */,
 				A46B41B4227A79F200558AAF /* Assets.xcassets */,
 				A46B41B6227A79F200558AAF /* LaunchScreen.storyboard */,
 				A46B41B9227A79F200558AAF /* Info.plist */,
+				A46B41C5227A88A500558AAF /* APIClient.swift */,
+				A46B41C7227A88F200558AAF /* Constants.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46B41B0227A79F000558AAF /* ViewController.swift in Sources */,
+				A46B41B0227A79F000558AAF /* GameController.swift in Sources */,
 				A46B41AE227A79F000558AAF /* AppDelegate.swift in Sources */,
+				A46B41C4227A7B8300558AAF /* Card.swift in Sources */,
+				A46B41C2227A7B6D00558AAF /* MemoryGame.swift in Sources */,
+				A46B41C8227A88F200558AAF /* Constants.swift in Sources */,
+				A46B41C0227A7B5700558AAF /* CardCell.swift in Sources */,
+				A46B41C6227A88A500558AAF /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
